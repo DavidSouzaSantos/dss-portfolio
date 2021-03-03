@@ -9,6 +9,32 @@
     "Reference": "Referência",
     "Contact": "Contatos"
   },
+  "About":{
+    "title": "Sobre",
+    "AboutMe": "Sobre Mim",
+    "AboutText": "Desde de muito novo, eu procurava um emprego diferente da pessoas ao meu redor, e quando eu comecei a estudar programação eu me identifiquei com essa área, e segui desenvolvendo novas habilidade, conhecendo novas pessoas e aproveitando novas oportunidades. com isso, eu sempre trabalho com um sorriso no rosto e a paixão nos olhos. Para saber mais sobre mim, continue explorando meu site ou entre em contato comigo.",
+    "BasicInformation": "Informações Básicas",
+    "DateBirth": {
+      "title": "Data de Nasc",
+      "value": "14 de Janeiro de 1993"
+    },
+    "Email": {
+      "title": "E-mail",
+      "value": "david.xvc93@gmail.com"
+    },
+    "MobileNo": {
+      "title": "Celular Nº",
+      "value": "(13) 98106-5732"
+    },
+    "Address": {
+      "title": "Endereço",
+      "value": "Av. Ilda Rosa da Cunha, 497, casa 2, Ribeirópolis - Praia grande"
+    },
+    "Language": {
+      "title": "Idioma",
+      "value": "English, Protugues (BR)"
+    }
+  },
 
   "AllRightsReserved": "Todos os direitos reservado."
 }

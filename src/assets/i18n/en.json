@@ -9,6 +9,32 @@
     "Reference": "Reference",
     "Contact": "Contact"
   },
+  "About":{
+    "title": "About",
+    "AboutMe": "About Me",
+    "AboutText": "Since I was younger, I've looked for a job different of people arround me, and when I start to learn code I identified myself with IT area, and I kept developing new skills, meeting new people and taking advantage of new opportunities. Now, I always work with a smile on my face and love in the eyes. To learn more about me, keep exploring my site or reach out directly.",
+    "BasicInformation": "Basic Information",
+    "DateBirth": {
+      "title": "Date of Birth",
+      "value": "January, 14 1993"
+    },
+    "Email": {
+      "title": "Email",
+      "value": "david.xvc93@gmail.com"
+    },
+    "MobileNo": {
+      "title": "Mobile Nº",
+      "value": "+55 (13) 98106-5732"
+    },
+    "Address": {
+      "title": "Address",
+      "value": "Av. Ilda Rosa da Cunha, 497, casa 2, Ribeirópolis - Praia grande"
+    },
+    "Language": {
+      "title": "Language",
+      "value": "English, Protugues (BR)"
+    }
+  },
 
   "AllRightsReserved": "All rights reserved."
 }

@@ -8,13 +8,15 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IntroductionComponent } from './introduction/introduction.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
     HeaderComponent,
     FooterComponent,
-      IntroductionComponent
+      IntroductionComponent,
+      AboutComponent
    ],
   imports: [
     BrowserModule,
