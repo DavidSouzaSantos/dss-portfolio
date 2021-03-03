@@ -1,0 +1,14 @@
+{
+  "Menu": {
+    "Title":"DSS Portfolio",
+    "About":"About",
+    "Experience": "Experience",
+    "Projects": "Projects",
+    "Skills": "Skills",
+    "Education": "Education",
+    "Reference": "Reference",
+    "Contact": "Contact"
+  },
+
+  "AllRightsReserved": "All rights reserved."
+}
