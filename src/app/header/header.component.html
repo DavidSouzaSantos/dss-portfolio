@@ -42,7 +42,7 @@
           </ul>
 
         </div>
-        
+
         <span class="form-inline justify-content-end">
           <select class="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
             <option *ngFor="let language of translate.getLangs()" [value]="language"
@@ -51,7 +51,7 @@
             </option>
           </select>
         </span>
-        
+
       </div>
     </nav>
   </div>

@@ -7,13 +7,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { IntroductionComponent } from './introduction/introduction.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HeaderComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+      IntroductionComponent
+   ],
   imports: [
     BrowserModule,
     HttpClientModule,
