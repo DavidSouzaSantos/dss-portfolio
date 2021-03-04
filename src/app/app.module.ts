@@ -9,14 +9,21 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { AboutComponent } from './about/about.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { EducationComponent } from './education/education.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [		
+  declarations: [					
     AppComponent,
     HeaderComponent,
     FooterComponent,
       IntroductionComponent,
-      AboutComponent
+      AboutComponent,
+      ExperienceComponent,
+      EducationComponent,
+      ContactComponent
    ],
   imports: [
     BrowserModule,
@@ -27,7 +34,10 @@ import { AboutComponent } from './about/about.component';
         useFactory: httpTranslateLoader,
         deps: [HttpClient]
       }
-    })
+    }),
+    FormsModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,12 @@
+button.bg-details:hover{
+  background-color: #395169 !important;
+}
+
+button.bg-red:hover{
+  background-color: #a84a53 !important;
+}
+
+div.invalid-feedback{
+  font-weight: 500;
+  text-shadow: -1px -1px 0 #395169, 1px -1px 0 #395169, -1px 1px 0 #395169, -1px 1px 0 #395169;
+}

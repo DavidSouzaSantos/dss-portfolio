@@ -80,6 +80,10 @@ a.nav-link, a.navbar-brand {
   background-color: #353642 !important;
 }
 
+.bg-red{
+  background-color: #9C3D45 !important;
+}
+
 .divider-custom {
   margin: 1.25rem 0 1.5rem;
   width: 100%;
@@ -122,4 +126,8 @@ a.nav-link, a.navbar-brand {
 
 .section-title{
   color:#2c3e50 !important;
+}
+
+.section-text{
+  color: #353642 !important;
 }
