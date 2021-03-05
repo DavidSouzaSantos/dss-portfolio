@@ -8,13 +8,18 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
 
+  isNavbarCollapsed:boolean = true;
+
   constructor(public translate: TranslateService) {
     translate.addLangs(['pt-br', 'en']);
     translate.setDefaultLang('pt-br');
-    console.log(translate.getDefaultLang());
+    
   }
 
   ngOnInit() {
+  }
+  toggleNavbarCollapsing(){
+    this.isNavbarCollapsed = !this.isNavbarCollapsed;
   }
 
   switchLang(lang: string) {
@@ -23,5 +28,9 @@ export class HeaderComponent implements OnInit {
 
   getLogo(lang:string){
     return `assets/img/logo-${lang}.png`;
+  }
+
+  changeLangueage(language:string){
+    this.translate.setDefaultLang(language);
   }
 }

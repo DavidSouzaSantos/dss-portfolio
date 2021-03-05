@@ -18,7 +18,7 @@
               [ngClass]="{'is-invalid': registerForm.get('name')?.errors && registerForm.get('name')?.touched}" />
             <div *ngIf="registerForm.get('name')?.hasError('required')
               && registerForm.get('name')?.touched" class="invalid-feedback text-right">
-              <h6>{{'Contact.Fields.ErrorMessage.Required' | translate}}</h6>
+              <h6>{{'Contact.Fields.ErrorMessage.Required' | translate:'{FieldName: "'+('Contact.Fields.Name' | translate)+'" }'}}</h6>
             </div>
             
           </div>
@@ -29,8 +29,19 @@
 
             <div *ngIf="registerForm.get('phoneNumber')?.hasError('required')
               && registerForm.get('phoneNumber')?.touched" class="invalid-feedback text-right">
-              <h6>Phone number é obrigatório.</h6>
+              <h6>{{'Contact.Fields.ErrorMessage.Required' | translate:'{FieldName: "'+('Contact.Fields.PhoneNumber' | translate)+'" }'}}</h6>
             </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input class="form-control" type="text" [placeholder]="('Contact.Fields.Subject' | translate)"
+            formControlName="subject"
+            [ngClass]="{'is-invalid': registerForm.get('subject')?.errors && registerForm.get('subject')?.touched}" />
+
+          <div *ngIf="registerForm.get('subject')?.hasError('required')
+              && registerForm.get('subject')?.touched" class="invalid-feedback text-right">
+              <h6>{{'Contact.Fields.ErrorMessage.Required' | translate:'{FieldName: "'+('Contact.Fields.Subject' | translate)+'" }'}}</h6>
           </div>
         </div>
 
@@ -41,11 +52,11 @@
 
           <div *ngIf="registerForm.get('email')?.hasError('required')
               && registerForm.get('email')?.touched" class="invalid-feedback text-right">
-            <h6>Email é obrigatório.</h6>
+              <h6>{{'Contact.Fields.ErrorMessage.Required' | translate:'{FieldName: "'+('Contact.Fields.Email' | translate)+'" }'}}</h6>
           </div>
           <div *ngIf="registerForm.get('email')?.hasError('email')
               && registerForm.get('email')?.touched" class="invalid-feedback text-right">
-            <h6>Email invalido!</h6>
+              <h6>{{'Contact.Fields.ErrorMessage.IsInvalid' | translate:'{FieldName: "'+('Contact.Fields.Email' | translate)+'" }'}}</h6>
           </div>
         </div>
 
@@ -54,13 +65,13 @@
             formControlName="message"
             [ngClass]="{'is-invalid': registerForm.get('message')?.errors && registerForm.get('message')?.touched}">
               </textarea>
-          <div *ngIf="registerForm.get('message')?.hasError('maxLength')
+          <div *ngIf="registerForm.get('message')?.hasError('required')
               && registerForm.get('message')?.touched" class="invalid-feedback text-right">
-            <h6>Message é obrigatório.</h6>
+              <h6>{{'Contact.Fields.ErrorMessage.Required' | translate:'{FieldName: "'+('Contact.Fields.Message' | translate)+'" }'}}</h6>
           </div>
-          <div *ngIf="registerForm.get('message')?.hasError('maxLength')
+          <div *ngIf="registerForm.get('message')?.hasError('maxlength')
               && registerForm.get('message')?.touched" class="invalid-feedback text-right">
-            <h6>Message deve ter no maximo 255 caracteres.</h6>
+              <h6>{{'Contact.Fields.ErrorMessage.MaxLength' | translate:'{FieldName: "'+('Contact.Fields.Message' | translate)+'",MaxLength:255  }'}}</h6>
           </div>
         </div>
 
@@ -70,7 +81,7 @@
               (click)="clear()">{{'Contact.Fields.BtnClear' | translate}}</button>
           </div>
           <div class="col-lg-6">
-            <button class="btn bg-details btn-xl text-white float-right"
+            <button class="btn bg-details btn-xl text-white float-right" [disabled]="!registerForm.valid"
               (click)="send()">{{'Contact.Fields.BtnSend' | translate}}</button>
           </div>
         </div>

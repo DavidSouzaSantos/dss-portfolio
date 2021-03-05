@@ -91,10 +91,27 @@
     "Fields": {
       "Name": "Name",
       "PhoneNumber": "PhoneNumber",
+      "Subject": "Subject",
       "Email": "Email",
-      "Message": "Your Message",
+      "Message": "Message",
       "BtnClear": "Clear",
-      "BtnSend": "Send"
+      "BtnSend": "Send",
+      "ErrorMessage":{
+        "Required": "{{FieldName}} is required.",
+        "MaxLength": "The {{FieldName}} maximum number of characters is {{MaxLength}}",
+        "IsInvalid": "{{FieldName}} is invalid",
+        "SendEmail":{
+          "Title": "Error",
+          "Value": "There was an error sending your message"
+        }
+      },
+      "SuccessMessage":
+      {
+        "SendEmail":{
+          "Title": "Success",
+          "Value": "Message has been sent!"
+        }
+      }
     }
   },
   "AllRightsReserved": "All rights reserved."

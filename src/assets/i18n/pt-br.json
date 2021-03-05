@@ -87,16 +87,30 @@
   },
   "Contact": {
     "Title": "Contate-me",
-    "Text": "Sinta-se à vontade para entrar em contato",
+    "Text": "Sinta-se à vontade para me contatar",
     "Fields": {
       "Name": "Nome",
       "PhoneNumber": "Telefone",
+      "Subject": "Assunto",
       "Email": "E-mail",
-      "Message": "Mensagem...",
+      "Message": "Mensagem",
       "BtnClear": "Limpar",
       "BtnSend": "Enviar",
       "ErrorMessage":{
-        "Required": "{{value}} é obrigatório."
+        "Required": "{{FieldName}} é obrigatório.",
+        "MaxLength": "{{FieldName}} deve ter no máximo {{MaxLength}} caracteres.",
+        "IsInvalid": "{{FieldName}} é inválido.",
+        "SendEmail":{
+          "Title": "Erro",
+          "Value": "Ocorreu um erro ao enviar sua mensagem."
+        }
+      },
+      "SuccessMessage":
+      {
+        "SendEmail":{
+          "Title": "Sucesso",
+          "Value": "Mensagem foi enviada!"
+        }
       }
     }
   },
