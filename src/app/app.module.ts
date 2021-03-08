@@ -17,9 +17,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ToastrModule } from 'ngx-toastr';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
-  declarations: [					
+  declarations: [						
     AppComponent,
     HeaderComponent,
     FooterComponent,
@@ -27,7 +28,8 @@ import { ToastrModule } from 'ngx-toastr';
       AboutComponent,
       ExperienceComponent,
       EducationComponent,
-      ContactComponent
+      ContactComponent,
+      SkillsComponent
    ],
   imports: [
     BrowserModule,

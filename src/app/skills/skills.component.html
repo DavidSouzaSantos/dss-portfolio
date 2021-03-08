@@ -1,0 +1,20 @@
+<section class="page-section page-top text-center" id="skills">
+  <div class="container">
+    <h2 class="text-center text-uppercase text-secondary mb-0 section-title">{{'Skills.Title' | translate}}</h2>
+
+    <div class="divider-custom">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon"><i class="fas fa-code"></i></div>
+      <div class="divider-custom-line"></div>
+    </div>
+
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mb-4">
+      <div class="col mb-4" *ngFor="let skill of ('Skills.Items' | translate)">
+        <div class="p-3 border bg-light">
+          <img src="{{skill.Icon}}" [style.width.px]="48"
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
