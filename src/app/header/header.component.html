@@ -1,7 +1,7 @@
 <header class="header">
   <nav class="navbar navbar-expand-lg fixed-top bg-details text-uppercase" color-on-scroll="400">
     <div class="container">
-    <button type="button" class="navbar-toggler text-white " (click)="toggleNavbarCollapsing()">
+    <button type="button" class="navbar-toggler text-white" (click)="toggleNavbarCollapsing()">
       <span class="fas fa-bars"></span>
     </button>
     <a class="navbar-brand" href="#" rel="tooltip">{{'Menu.Title' | translate}}</a>
@@ -10,29 +10,24 @@
     <div class="navbar-collapse collapse justify-content-center" [class.collapse]="isNavbarCollapsed">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#about">{{'Menu.About' | translate }}</a>
+          <a class="nav-link" href="#about">{{'Menu.About' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#experience">{{'Menu.Experience' | translate}}</a>
+          <a class="nav-link" href="#experience">{{'Menu.Experience' | translate}}</a>
         </li>
-
         <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#education">{{'Menu.Education' | translate}}</a>
+          <a class="nav-link" href="#education">{{'Menu.Education' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skill">{{'Menu.Skills' | translate}}</a>
         </li>
         <!--
         <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#projects">{{'Menu.Projects' | translate}}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#skill">{{'Menu.Skills' | translate}}</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#reference">{{'Menu.Reference' | translate}}</a>
+          <a class="nav-link" href="#projects"  >{{'Menu.Projects' | translate}}</a>
         </li>
         -->
         <li class="nav-item">
-          <a class="nav-link smooth-scroll" href="#contact">{{'Menu.Contact' | translate}}</a>
+          <a class="nav-link" href="#contact">{{'Menu.Contact' | translate}}</a>
         </li>
       </ul>
 

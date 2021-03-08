@@ -173,3 +173,6 @@ ul.timeline > li:before {
     text-align: left !important;
   }
 }
+html {
+  scroll-behavior: smooth;
+}

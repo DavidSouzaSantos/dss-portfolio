@@ -9,15 +9,17 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent implements OnInit {
 
   isNavbarCollapsed:boolean = true;
+  hash:string;
 
   constructor(public translate: TranslateService) {
     translate.addLangs(['pt-br', 'en']);
     translate.setDefaultLang('pt-br');
-    
   }
 
   ngOnInit() {
+    this.atualizaHash();
   }
+
   toggleNavbarCollapsing(){
     this.isNavbarCollapsed = !this.isNavbarCollapsed;
   }
@@ -32,5 +34,18 @@ export class HeaderComponent implements OnInit {
 
   changeLangueage(language:string){
     this.translate.setDefaultLang(language);
+  }
+
+  isActive(tab): boolean {
+    
+    //console.log(tab, this.http);  
+    if (window.location.hash) {
+      return tab == this.hash;
+    }
+    return false;
+  }
+
+  atualizaHash(){
+    this.hash = window.location.hash;
   }
 }
