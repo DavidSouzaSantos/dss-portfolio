@@ -85,6 +85,35 @@
       }
     ]
   },
+  "Skills": {
+    "Title": "Habilidades",
+    "Items": [
+      {
+        "Icon": "assets/img/skill-dotnet.png"
+      },
+      {
+        "Icon": "assets/img/skill-csharp.png"
+      },
+      {
+        "Icon": "assets/img/skill-html5.png"
+      },
+      {
+        "Icon": "assets/img/skill-css3.png"
+      },
+      {
+        "Icon": "assets/img/skill-javascript.png"
+      },
+      {
+        "Icon": "assets/img/skill-bootstrap.png"
+      },
+      {
+        "Icon": "assets/img/skill-java.png"
+      },
+      {
+        "Icon": "assets/img/skill-mysql.png"
+      }
+    ]
+  },
   "Contact": {
     "Title": "Contact me",
     "Text": "Feel free to contact me",
