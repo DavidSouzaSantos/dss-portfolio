@@ -1,5 +1,5 @@
 <section class="page-section page-top text-center" id="experience">
-  <div class="container ">
+  <div class="container mt-5 mb-5">
     <h2 class="text-center text-uppercase text-secondary mb-0 section-title">{{'Experience.Title' | translate}}</h2>
 
     <div class="divider-custom">
@@ -8,24 +8,24 @@
       <div class="divider-custom-line"></div>
     </div>
 
-    <div class="card section-text mt-4" data-aos="fade-up" data-aos-offset="10"
-      *ngFor="let job of ('Experience.Jobs' | translate)">
-      <div class="card-header bg-dark text-white">
-        <div class="row">
-          <div class="col-lg-4 text-left">
-            <h3>{{job.Duration}}</h3>
-          </div>
-          <div class="col-lg-8 company">
-            <h3>{{job.Company.Name}}</h3>
-            <h5>{{job.Company.City}}</h5>
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <ul class="timeline">
+          <li *ngFor="let job of ('Experience.Jobs' | translate)">
+            <div class="row section-main text-uppercase">
+              <div class="col-md-4 text-left">
+                <h5>{{job.Duration}}</h5>
+              </div>
+              <div class="col-md-8 text-right">
+                <h5>{{job.Company.Name}} </h5>
+                <h6>{{job.Company.City}}</h6>
+              </div>
+            </div>
+            <h6 class="section-text text-uppercase">{{job.Employment}}</h6>
+            <p class="text-justify">{{job.Description}}</p>
+          </li>
+        </ul>
       </div>
-      <div class="card-body">
-        <h3 class="card-title">{{job.Employment}}</h3>
-        <p class="card-text text-justify">{{job.Description}}</p>
-      </div>
-
     </div>
   </div>
 </section>

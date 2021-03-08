@@ -1,15 +1,21 @@
-button.bg-details:hover:enabled{
+button.bg-details:hover:enabled {
   background-color: #395169 !important;
 }
 
-button.bg-red:hover{
+button.bg-red:hover {
   background-color: #a84a53 !important;
 }
 
-
-
-div.invalid-feedback{
+div.invalid-feedback {
   color: #fff;
   font-weight: 500;
-  text-shadow: -1px -1px 0 #dc3545, 1px -1px 0 #dc3545, -1px 1px 0 #dc3545, -1px 1px 0 #dc3545;
+  text-shadow: -1px -1px 0 #dc3545, 1px -1px 0 #dc3545, -1px 1px 0 #dc3545,
+    -1px 1px 0 #dc3545;
+}
+
+@media (max-width: 520px) {
+  .btn-contact {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }

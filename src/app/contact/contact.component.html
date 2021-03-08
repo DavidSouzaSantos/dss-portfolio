@@ -11,9 +11,8 @@
 
     <div class="col-lg-6 mx-auto">
       <form [formGroup]="registerForm">
-        <div class=" row">
-          <div class="form-group col-6 pr-5" style="padding-right: 5px !important;">
-            <input class="form-control" type="text" formControlName="name"
+          <div class="form-group">
+            <input class="form-control form-control-lg " type="text" formControlName="name"
               [placeholder]="('Contact.Fields.Name' | translate)"
               [ngClass]="{'is-invalid': registerForm.get('name')?.errors && registerForm.get('name')?.touched}" />
             <div *ngIf="registerForm.get('name')?.hasError('required')
@@ -22,8 +21,8 @@
             </div>
           </div>
           
-          <div class="form-group col-6" style="padding-left: 5px !important;">
-            <input class="form-control" type="tel" [placeholder]="('Contact.Fields.PhoneNumber' | translate)"
+          <div class="form-group">
+            <input class="form-control form-control-lg" type="tel" [placeholder]="('Contact.Fields.PhoneNumber' | translate)"
               formControlName="phoneNumber"
               [ngClass]="{'is-invalid': registerForm.get('phoneNumber')?.errors && registerForm.get('phoneNumber')?.touched}" />
 
@@ -32,10 +31,9 @@
               <h6>{{'Contact.Fields.ErrorMessage.Required' | translate:'{FieldName: "'+('Contact.Fields.PhoneNumber' | translate)+'" }'}}</h6>
             </div>
           </div>
-        </div>
 
         <div class="form-group">
-          <input class="form-control" type="text" [placeholder]="('Contact.Fields.Subject' | translate)"
+          <input class="form-control form-control-lg" type="text" [placeholder]="('Contact.Fields.Subject' | translate)"
             formControlName="subject"
             [ngClass]="{'is-invalid': registerForm.get('subject')?.errors && registerForm.get('subject')?.touched}" />
 
@@ -46,7 +44,7 @@
         </div>
 
         <div class="form-group">
-          <input class="form-control" type="email" [placeholder]="('Contact.Fields.Email' | translate)"
+          <input class="form-control form-control-lg" type="email" [placeholder]="('Contact.Fields.Email' | translate)"
             formControlName="email"
             [ngClass]="{'is-invalid': registerForm.get('email')?.errors && registerForm.get('email')?.touched}" />
 
@@ -61,7 +59,7 @@
         </div>
 
         <div class="form-group">
-          <textarea class="form-control" rows="5" [placeholder]="('Contact.Fields.Message' | translate)"
+          <textarea class="form-control form-control-lg" rows="5" [placeholder]="('Contact.Fields.Message' | translate)"
             formControlName="message"
             [ngClass]="{'is-invalid': registerForm.get('message')?.errors && registerForm.get('message')?.touched}">
               </textarea>
@@ -77,11 +75,11 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <button class="btn bg-red btn-xl text-white "
+            <button class="btn bg-red btn-xl text-white btn-contact"
               (click)="clear()">{{'Contact.Fields.BtnClear' | translate}}</button>
           </div>
           <div class="col-lg-6">
-            <button class="btn bg-details btn-xl text-white float-right" [disabled]="!registerForm.valid"
+            <button class="btn bg-details btn-xl text-white float-right btn-contact" [disabled]="!registerForm.valid"
               (click)="send()">{{'Contact.Fields.BtnSend' | translate}}</button>
           </div>
         </div>

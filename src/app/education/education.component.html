@@ -1,5 +1,5 @@
 <section class="page-section page-top text-center" id="education">
-  <div class="container ">
+  <div class="container mt-5 mb-5">
     <h2 class="text-center text-uppercase text-secondary mb-0 section-title">{{'Education.Title' | translate}}</h2>
 
     <div class="divider-custom">
@@ -8,24 +8,25 @@
       <div class="divider-custom-line"></div>
     </div>
 
-    <div class="card section-text mt-4" data-aos="fade-up" data-aos-offset="10"
-      *ngFor="let course of ('Education.Courses' | translate)">
-      <div class="row">
-        <div class="col-lg-4 text-center bg-dark text-white">
-          <div class="m-4">
-          <h5>{{course.Duration}}</h5>
-          <h5>{{course.Institution.Name}}</h5>
-          <h5>{{course.Institution.City}}</h5>
-        </div>
-        </div>
-        <div class="card-body col-lg-8 text-center">
-          <h3 class="card-title">{{course.Name}}</h3>
-          <div class="card-text">
-            <div class="badge bg-dark text-white text-uppercase mr-2" *ngFor="let tech of course.Technologies">
-              <h5 class="m-2">{{tech}}</h5>
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <ul class="timeline">
+          <li *ngFor="let course of ('Education.Courses' | translate)">
+            <div class="row section-main text-uppercase">
+              <div class="col-md-4 text-left">
+                <h5>{{course.Duration}}</h5>
+              </div>
+              <div class="col-md-8 text-right">
+                <h5>{{course.Institution.Name}}</h5>
+                <h6>{{course.Institution.City}}</h6>
+              </div>
             </div>
-          </div>
-        </div>
+            <h6 class="section-text text-uppercase">{{course.Name}}</h6>
+            <div class="badge bg-dark text-white text-uppercase mr-2" *ngFor="let tech of course.Technologies">
+              {{tech}}
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
