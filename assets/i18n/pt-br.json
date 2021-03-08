@@ -1,7 +1,7 @@
 {
   "Menu": {
-    "Title":"DSS Portfólio",
-    "About":"Sobre",
+    "Title": "DSS Portfólio",
+    "About": "Sobre",
     "Experience": "Experiência",
     "Projects": "Projetos",
     "Skills": "Habilidades",
@@ -9,11 +9,10 @@
     "Reference": "Referência",
     "Contact": "Contatos"
   },
-  "Introduction":
-  {
+  "Introduction": {
     "Employment": "Desenvolvedor .Net Pleno"
   },
-  "About":{
+  "About": {
     "Title": "Sobre",
     "AboutMe": "Sobre Mim",
     "AboutText": "Desde de muito novo, eu procurava um emprego diferente da pessoas ao meu redor, e quando eu comecei a estudar programação eu me identifiquei com essa área, e segui desenvolvendo novas habilidade, conhecendo novas pessoas e aproveitando novas oportunidades. com isso, eu sempre trabalho com um sorriso no rosto e a paixão nos olhos. Para saber mais sobre mim, continue explorando meu site ou entre em contato comigo.",
@@ -32,14 +31,14 @@
     },
     "Address": {
       "Title": "Endereço",
-      "Value": "Av. Ilda Rosa da Cunha, 497, casa 2, Ribeirópolis - Praia grande"
+      "Value": "Praia Grande - SP"
     },
     "Language": {
       "Title": "Idioma",
       "Value": "English, Protugues (BR)"
     }
   },
-  "Experience":{
+  "Experience": {
     "Title": "Experiência Profissional",
     "Jobs": [
       {
@@ -72,7 +71,13 @@
           "City": "Praia Grande - SP"
         },
         "Duration": "Out 2014 - Jun 2018",
-        "Technologies": ["Java", "PHP", "Javascript", "CSS", "Oracle"]
+        "Technologies": [
+          "Java",
+          "PHP",
+          "Javascript",
+          "CSS",
+          "Oracle"
+        ]
       },
       {
         "Name": "Técnico Em Informática",
@@ -81,7 +86,43 @@
           "City": "Mongaguá - SP"
         },
         "Duration": "Jun 2010 - Dez 2011",
-        "Technologies": ["Java", "Visual Basic", "MySQL", "HTML", "CSS", "JavaScript"]
+        "Technologies": [
+          "Java",
+          "Visual Basic",
+          "MySQL",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      }
+    ]
+  },
+  "Skills": {
+    "Title": "Habilidades",
+    "Items": [
+      {
+        "Icon": "assets/img/skill-dotnet.png"
+      },
+      {
+        "Icon": "assets/img/skill-csharp.png"
+      },
+      {
+        "Icon": "assets/img/skill-html5.png"
+      },
+      {
+        "Icon": "assets/img/skill-css3.png"
+      },
+      {
+        "Icon": "assets/img/skill-javascript.png"
+      },
+      {
+        "Icon": "assets/img/skill-bootstrap.png"
+      },
+      {
+        "Icon": "assets/img/skill-java.png"
+      },
+      {
+        "Icon": "assets/img/skill-mysql.png"
       }
     ]
   },
@@ -96,18 +137,17 @@
       "Message": "Mensagem",
       "BtnClear": "Limpar",
       "BtnSend": "Enviar",
-      "ErrorMessage":{
+      "ErrorMessage": {
         "Required": "{{FieldName}} é obrigatório.",
         "MaxLength": "{{FieldName}} deve ter no máximo {{MaxLength}} caracteres.",
         "IsInvalid": "{{FieldName}} é inválido.",
-        "SendEmail":{
+        "SendEmail": {
           "Title": "Erro",
           "Value": "Ocorreu um erro ao enviar sua mensagem."
         }
       },
-      "SuccessMessage":
-      {
-        "SendEmail":{
+      "SuccessMessage": {
+        "SendEmail": {
           "Title": "Sucesso",
           "Value": "Mensagem foi enviada!"
         }
