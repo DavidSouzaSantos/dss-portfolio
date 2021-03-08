@@ -71,7 +71,7 @@
           "Name": "FATEC Praia Grande",
           "City": "Praia Grande - SP"
         },
-        "Duration": "Oct 2014 - Jun 2018",
+        "Duration": "Out 2014 - Jun 2018",
         "Technologies": ["Java", "PHP", "Javascript", "CSS", "Oracle"]
       },
       {
@@ -81,7 +81,7 @@
           "City": "Mongaguá - SP"
         },
         "Duration": "Jun 2010 - Dez 2011",
-        "Technologies": ["Java", "Visual Basic", "MySQL"]
+        "Technologies": ["Java", "Visual Basic", "MySQL", "HTML", "CSS", "JavaScript"]
       }
     ]
   },
