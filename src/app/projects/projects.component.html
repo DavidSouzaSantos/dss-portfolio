@@ -1,0 +1,60 @@
+<section class="page-section page-top text-center " id="projects">
+  <div class="container">
+    <h2 class="text-center text-uppercase text-secondary mb-0 section-title">{{'Projects.Title' | translate}}</h2>
+
+    <div class="divider-custom">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon"><i class="fas fa-code"></i></div>
+      <div class="divider-custom-line"></div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+      <div class="col mb-4" *ngFor="let project of ('Projects.Items' | translate)">
+        <div class="project-item mx-auto">
+          <div (click)="openModal(template, project)"
+            class="project-item-over rounded d-flex align-items-center justify-content-center h-100 w-100 p-3 text-center text-white">
+            <i class="fas fa-plus fa-3x"></i>
+            <h5 class="text-uppercase p-2">{{project.Name}}</h5>
+          </div>
+          <img class="img-fluid rounded" src="{{project.Image}}" alt="{{project.Name}}" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div bsModal #template="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-sizes-name1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-main text-white">
+        <h5 id="dialog-sizes-name1" class="modal-title pull-left text-uppercase">{{projectSelected.Title}}
+        </h5>
+        <button type="button" class="close pull-right" (click)="template.hide()" aria-label="Close">
+          <h5><i class="fas fa-times"></i></h5>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6">
+            <img class="rounded" src="{{projectSelected.Image}}" alt="{{projectSelected.Name}}"
+              [style.width.px]="350" />
+          </div>
+          <div class="col-6 text-center">
+            <h2 class="section-title">{{projectSelected.Name}}</h2>
+            <div class="divider-custom">
+              <div class="divider-custom-line"></div>
+              <div class="divider-custom-icon"><i class="fas fa-code"></i></div>
+              <div class="divider-custom-line"></div>
+            </div>
+            <p>{{projectSelected.Description}}</p>
+            <a class="btn btn-modal bg-details text-white" href="{{projectSelected.BtnModalLink}}" target="_blank">
+              <i class="fas fa-sign-in-alt"></i> {{projectSelected.BtnModalTitle}}
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

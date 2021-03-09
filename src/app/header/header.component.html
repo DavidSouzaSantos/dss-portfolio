@@ -4,7 +4,10 @@
     <button type="button" class="navbar-toggler text-white" (click)="toggleNavbarCollapsing()">
       <span class="fas fa-bars"></span>
     </button>
-    <a class="navbar-brand" href="#" rel="tooltip">{{'Menu.Title' | translate}}</a>
+    <a class="navbar-brand" href="#" rel="tooltip">
+      <img src="assets/img/projects/ico-logo.svg" alt="" width="45" height="38">
+      {{'Menu.Title' | translate}}
+    </a>
 
 
     <div class="navbar-collapse collapse justify-content-center" [class.collapse]="isNavbarCollapsed">
@@ -21,11 +24,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#skills">{{'Menu.Skills' | translate}}</a>
         </li>
-        <!--
         <li class="nav-item">
           <a class="nav-link" href="#projects"  >{{'Menu.Projects' | translate}}</a>
         </li>
-        -->
         <li class="nav-item">
           <a class="nav-link" href="#contact">{{'Menu.Contact' | translate}}</a>
         </li>

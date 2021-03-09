@@ -95,13 +95,7 @@
         "Icon": "assets/img/skill-csharp.png"
       },
       {
-        "Icon": "assets/img/skill-html5.png"
-      },
-      {
-        "Icon": "assets/img/skill-css3.png"
-      },
-      {
-        "Icon": "assets/img/skill-javascript.png"
+        "Icon": "assets/img/skill-angular.png"
       },
       {
         "Icon": "assets/img/skill-bootstrap.png"
@@ -111,6 +105,31 @@
       },
       {
         "Icon": "assets/img/skill-mysql.png"
+      },
+      {
+        "Icon": "assets/img/skill-git.png"
+      },
+      {
+        "Icon": "assets/img/skill-html5.png"
+      },
+      {
+        "Icon": "assets/img/skill-css3.png"
+      },
+      {
+        "Icon": "assets/img/skill-javascript.png"
+      }
+    ]
+  },
+  "Projects": {
+    "Title": "Projects",
+    "Items": [
+      {
+        "Title": "Personal Portfolio",
+        "Name": "DSS Portfolio",
+        "Image": "assets/img/projects/personal-portfolio.png",
+        "Description": "Personal portfolio was developed to divulge my skills and projects.",
+        "BtnModalTitle": "Visit",
+        "BtnModalLink": "https://davidsouzasantos.github.io/dss-portfolio/"
       }
     ]
   },

@@ -18,9 +18,11 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ToastrModule } from 'ngx-toastr';
 import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
-  declarations: [						
+  declarations: [							
     AppComponent,
     HeaderComponent,
     FooterComponent,
@@ -29,7 +31,8 @@ import { SkillsComponent } from './skills/skills.component';
       ExperienceComponent,
       EducationComponent,
       ContactComponent,
-      SkillsComponent
+      SkillsComponent,
+      ProjectsComponent
    ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import { SkillsComponent } from './skills/skills.component';
       timeOut: 1000,
       positionClass: 'toast-bottom-right',
       preventDuplicates: true,
-    })
+    }),
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

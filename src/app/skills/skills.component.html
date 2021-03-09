@@ -8,11 +8,10 @@
       <div class="divider-custom-line"></div>
     </div>
 
-    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mb-4">
+    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-5">
       <div class="col mb-4" *ngFor="let skill of ('Skills.Items' | translate)">
-        <div class="p-3 border bg-light">
-          <img src="{{skill.Icon}}" [style.width.px]="48"
-          >
+        <div class="p-3 border bg-light" style="height: 86px;">
+          <img  src="{{skill.Icon}}">
         </div>
       </div>
     </div>
