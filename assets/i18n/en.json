@@ -89,33 +89,43 @@
     "Title": "Habilidades",
     "Items": [
       {
+        "Name": "Microsoft .NET",
         "Icon": "assets/img/skill-dotnet.png"
       },
       {
+        "Name": "C#",
         "Icon": "assets/img/skill-csharp.png"
       },
       {
+        "Name": "Angular2+",
         "Icon": "assets/img/skill-angular.png"
       },
       {
+        "Name": "Bootstrap",
         "Icon": "assets/img/skill-bootstrap.png"
       },
       {
+        "Name": "Java",
         "Icon": "assets/img/skill-java.png"
       },
       {
+        "Name": "MySQL",
         "Icon": "assets/img/skill-mysql.png"
       },
       {
+        "Name": "Git",
         "Icon": "assets/img/skill-git.png"
       },
       {
+        "Name": "HTML5",
         "Icon": "assets/img/skill-html5.png"
       },
       {
+        "Name": "CSS3",
         "Icon": "assets/img/skill-css3.png"
       },
       {
+        "Name": "JavaScript",
         "Icon": "assets/img/skill-javascript.png"
       }
     ]
@@ -128,8 +138,11 @@
         "Name": "DSS Portfolio",
         "Image": "assets/img/projects/personal-portfolio.png",
         "Description": "Personal portfolio was developed to divulge my skills and projects.",
-        "BtnModalTitle": "Visit",
-        "BtnModalLink": "https://davidsouzasantos.github.io/dss-portfolio/"
+        "BtnSiteTitle": "Visit",
+        "BtnSiteLink": "https://davidsouzasantos.github.io/dss-portfolio/",
+        "BtnCodeTitle": "Source Code",
+        "BtnCodeLink": "https://github.com/DavidSouzaSantos/dss-portfolio"
+      }
       }
     ]
   },
