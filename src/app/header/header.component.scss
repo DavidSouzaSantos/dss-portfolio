@@ -9,8 +9,22 @@ img.logo-en /* Se for impar fica com fundo verde */ {
   background: url("/assets/img/logo-en.png");
 }
 
-@media (min-width:390px)and  (max-width:425px) {
-  .container {
-    flex-wrap: nowrap;
+#close-menu{
+  font-size: 1.8rem;
+}
+
+.btn-menu{
+  width: 3em;
+    height: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+  .menu-title {
+    display: none;
+  }
+
+  .navbar-collapse{
+    margin-top: 20px;
   }
 }
+

@@ -21,3 +21,13 @@ button.close{
 .btn-modal{
   margin-top:1.4rem;
 }
+
+@media screen and (max-width: 1000px) {
+  #btn-title{
+    font-size: 1rem;
+  }
+
+  #btn-plus{
+    font-size: 2em;
+  }
+}

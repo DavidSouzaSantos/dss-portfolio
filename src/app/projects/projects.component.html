@@ -13,8 +13,8 @@
         <div class="project-item mx-auto">
           <div (click)="openModal(template, project)"
             class="project-item-over rounded d-flex align-items-center justify-content-center h-100 w-100 p-3 text-center text-white">
-            <i class="fas fa-plus fa-3x"></i>
-            <h5 class="text-uppercase p-2">{{project.Name}}</h5>
+            <i id="btn-plus" class="fas fa-plus fa-3x"></i>
+            <h5 id="btn-title" class="text-uppercase p-2">{{project.Name}}</h5>
           </div>
           <img class="img-fluid rounded" src="{{project.Image}}" alt="{{project.Name}}" />
         </div>
@@ -35,12 +35,12 @@
         </button>
       </div>
       <div class="modal-body">
-        <div class="row">
-          <div class="col-6">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-col-lg-2">
+          <div class="col-lg-6 text-center">
             <img class="rounded" src="{{projectSelected.Image}}" alt="{{projectSelected.Name}}"
               [style.width.px]="350" />
           </div>
-          <div class="col-6 text-center">
+          <div class="col-lg-6 text-center">
             <h2 class="section-title">{{projectSelected.Name}}</h2>
             <div class="divider-custom">
               <div class="divider-custom-line"></div>
@@ -48,8 +48,11 @@
               <div class="divider-custom-line"></div>
             </div>
             <p>{{projectSelected.Description}}</p>
-            <a class="btn btn-modal bg-details text-white" href="{{projectSelected.BtnModalLink}}" target="_blank">
-              <i class="fas fa-sign-in-alt"></i> {{projectSelected.BtnModalTitle}}
+            <a class="btn btn-modal bg-dark text-white float-left" href="{{projectSelected.BtnCodeLink}}" target="_blank">
+              <i class="fab fa-github"></i> {{projectSelected.BtnCodeTitle}}
+            </a>
+            <a class="btn btn-modal bg-details text-white float-right" href="{{projectSelected.BtnSiteLink}}" target="_blank">
+              <i class="fas fa-sign-in-alt"></i> {{projectSelected.BtnSiteTitle}}
             </a>
           </div>
         </div>

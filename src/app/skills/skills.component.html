@@ -10,8 +10,8 @@
 
     <div class="row row-cols-2 row-cols-sm-2 row-cols-md-5">
       <div class="col mb-4" *ngFor="let skill of ('Skills.Items' | translate)">
-        <div class="p-3 border bg-light" style="height: 86px;">
-          <img  src="{{skill.Icon}}">
+        <div class="p-3 border bg-light" style="height: 86px;" title="{{skill.Name}}">
+          <img  src="{{skill.Icon}}" alt="{{skill.Name}}">
         </div>
       </div>
     </div>
